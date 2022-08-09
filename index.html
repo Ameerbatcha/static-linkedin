@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="nav.css" type="text/css">
+    <link rel="stylesheet" href="leftpannel.css" type="text/css">
+    <link rel="stylesheet" href="middlepannel.css" type="text/css">
+    <link rel="stylesheet" href="rightpannel.css" type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+    <link rel="shortcut icon" href="download.png">
+
+
+    <title>LinkedIn</title>
+</head>
+
+<body>
+    <!-- header contents in navigation bar  -->
+    <nav class="navigation">
+
+
+
+        <div class="adjacent">
+            <img style="height: 2.5em;width: 2.5em;"
+                src="data:image/png;base64,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"
+                alt="Linkedin">
+            <input type="search" placeholder="🔍Search"
+                style="height:90%;width: 60%;background-color: #f0faff;border: 0px;padding-left: 20px;margin-left: 2%;">
+        </div>
+
+        <a href="" class="inline"><img src="home.png" alt="">Home</a>
+        <a href="" class="inline mynetwork"><img src="networks.png" alt="" class="long">My Network</a>
+        <a href="" class="inline jobs"><img src="jobs.png" alt="">Jobs</a>
+        <a href="" class="inline messaging"> <img src="message.png" alt="" class="long ">Messaging</a>
+        <a href="" class="inline notification"> <img src="notification.png" alt="" class="long ">Notifications</a>
+
+
+        <div class="inline me"><img class="round" src="Blue.jpg" alt="">Me
+        </div>
+        <div class="inline" style="border-left: 1px solid grey;padding-left: 3em;"><img src="work.png" alt="">Work</div>
+        <h4 class="premium"
+            style="overflow:hidden;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;margin-right: 2rem;margin-left: 2rem;font-weight: 100;">
+            Try premium for <br>free</h4>
+
+
+
+    </nav>
+
+    <!-- left side contents -->
+    <div class="totalleftside">
+    <div class="leftpannel_1">
+        <div class="userinfo1"><a href="#">
+                <span class="background"></span>
+                <span class="roundimg"><img src="Blue.jpg" alt=""> </span><br><br><br>
+                <div>
+                    <h3 style="color: rgb(74, 73, 73);">Ameer Batcha S</h3>
+            </a>
+            <h5 style="font-size: small;font-family:Arial, Helvetica, sans-serif;font-weight: 100;">Student at
+                Velammal Engineering
+                College</h5>
+        </div>
+    </div>
+
+    <div class="userinfo2">
+        <a href="#">
+            <h6><span>Who viewed your profile</span><span style="float: right;color: blue;">17</span> </h6>
+        </a>
+        <a href="#">
+            <h6><span>Connections</span> <span style="float:right;color: blue;">123</span><br><span class="dark"> Grow
+                    your
+                    Network</span></h6>
+        </a>
+    </div>
+
+    <div class="userinfo3">
+        <a href="#">
+            <h6><span> Access exclusive tools & insights </span>
+                <br><span><img
+                        src="data:image/webp;base64,UklGRpgCAABXRUJQVlA4IIwCAACQGACdASosAagAPpFIm00lpCIiIClosBIJaW7hEtb+rQqcn+7zfPICNUEa5sf5fp37AGH9q46zauOs2rjusia4x22NhvAzTqPTP+bYDeUsfJe4M+zh5f+/QK3m92+g28/1LflfmrjKoIfIp/365HmD2R330TZs4hvKT4jng3g3ClUenSodAl7UpyqnXjMVx2KaqpxRaDbUfBahLyaJ7/NPI2k/yVtGAAHqSm/7XRz6PPIQX/z+UlUJUJVutrPkAHWdrGqIoS28UcyR7AgAAP7Zmv/+0If/2v9/+1/vxffs9p7jjwyy/DgZEReevzoK2Qj6kjxI7PtHT1uzP78ryQD2K7CC6ZpX4rksfwKSC0PQzBRoimYPJJaE/+2xmIYJqUtUrrqrgeRkR5Uhgi5ndkDBleiZD2sFszDUa+h/n82JFgkt9HCGURoMcpxIlGw28WCu+C0x9FMRKta40WQi4kySMtYpBTti9cTRzGpC/T7FFNcs9bK0Asxvz4FSAXxF+pFInaYFDJRsANIQNrfxFQw4XLtw+RfmgflCK1ke/0Y5YBjJlmV+OKRBVPreZtggJ3O67rkaBwWfMLM3qgyi2UDi+brlGwQPgEAIJ+bdqCWcdn5jsLYscUMFuBNS1UIxXuR/ySBRFrP4zE86sC4QAwSxaqQFSBoRZ8T9i25I9j63lbrln3E6jGWP3HXtJqnqzZp5s3B4w3HiHLbMVy1EvVETUfpRi+ttnpOCW5Xrp9MUg1kkwj+Ey6fhrMIY8SCkpFg7q8drRK/83B2wRjK5nJON+ZsLo9+A1RRgKgcxnd9kuxGh9zzHNit8C1YhN8guS/alIQJAFifNurKnZUN2KsanLWvUCBhzttgAAAAA"
+                        alt="" width="5%" height="10rem"> </span> <span class="dark">Try Premium for free</span>
+            </h6>
+        </a>
+
+    </div>
+    <div class="userinfo4">
+        <a href="#">
+            <h6 class="dark"><span><img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwq20KcdSUuuJGgya4goYt_h0Vw2ZOgpzUHA&usqp=CAU"
+                        alt="" width="7%" height="15rem"></span> My items</h6>
+        </a>
+    </div>
+    </div>
+
+    <div class="leftpannel_2">
+        <div class="rescentactivity1">
+            <ul style="list-style-type: none;">
+                <a href="">
+                    <li>Groups</li>
+                </a>
+                <a href="">
+                    <li>Events <span class="btn" style="float: right;">
+                            <button style="background-color: white;border: 0px;">+</button></span>
+                    </li>
+                </a>
+                <a href="">
+                    <li>Followed Hashtags</li>
+                </a>
+            </ul>
+        </div>
+        <div class="rescentactivity2">
+            <a href="">
+                <h3 style="text-align: center;padding: 2%;">Discover more</h3>
+            </a>
+        </div>
+    </div>
+    </div>
+
+
+
+    <!-- middle contents -->
+    <div class="middlepannel">
+        <div class="postingsection">
+            <div class="upper">
+                <img class="rounded" src="Blue.jpg" alt="" />
+                <input type="text" placeholder="Start a Post" width="30%">
+            </div>
+            <div class="lower">
+                <button><img src="icons8-image-gallery-48.png" alt="" width="24em" height="30em"><span
+                        style="margin-left:1em;">Photo</span> </button>
+                <button><img src="icons8-next-48.png" alt="" width="24em" height="30em"><span
+                        style="margin-left:1em;">Video</span></button>
+                <button><img src="icons8-calendar-53.png" alt="" width="24em" height="30em"><span
+                        style="margin-left:1em;">Event</span></button>
+                <button><img src="icons8-note-16.png" alt="" width="24em" height="30em"><span
+                        style="margin-left:1em;">Write Article</span></button>
+            </div>
+
+        </div>
+        <div class="line sortby">
+            <hr>
+        </div><p class="sortby" style="display:inline;"> Sort by:</p><select name="selector" id="selector">
+            <option value="top">Top</option>
+            <option value="rescent">Rescent</option>
+        </select>
+        <div class="newsfeed">
+            <div class="liker"><img style="margin-top: 0.3rem;" src="zainabjpg.jpg" alt="">
+                <a href="">
+                    <div class="likerdetail" style="margin-right: 0.5rem;margin-top: 0.5rem;"><span class="dark">ZAINAB
+                            NUSAIBA</span>
+                </a><span>likes this</span>
+                <span><img style="float: right;margin-right: 1rem;margin-top: 0.3rem" src="icons8-more-32.png"
+                        alt=""></span>
+            </div>
+        </div>
+        <div class="mid_hr" style="margin-left: 0.7rem;margin-right: 1rem;margin-top: rem;">
+            <hr>
+        </div>
+
+
+        <div class="poster"><img src="tashajpg.jpg" alt="">
+            <div class="posterdetail"><span class="dark">Tasha Fitts</span> 3rd+<br>Recruiting at Google<button><img
+                        src="icons8-plus-math-16.png" alt=""><span style="color: blue;">
+                        Follow</span></button> <br>3d</div>
+        </div>
+
+        <div class="description dark">Four years ago, I posted on LinkedIn: <br><br>
+            “Working from home 2x a week can boost productivity and job fulfillment by cutting the commute.”
+            <br><br>
+            Today, Google starts the hybrid work week — three days in the office, two days WFH. <br><br>
+        </div>
+        <div class="postimage">
+            <img src="postimage.jpg" alt="">
+        </div>
+
+        <div class="likerdetails">
+            <div> <span class="interactions imgs"><img src="Like.svg" alt=""><img src="Appreciate.svg" alt=""><img
+                        src="Clap.svg" alt=""></span>
+                <span class="interactions">Vishwanath and 3,975 others</span>
+            </div>
+            <div><span class="interactions">114 shares</span>
+
+            </div>
+        </div>
+        <div class="operation">
+            <a href=""> <i class="bi bi-hand-thumbs-up"></i></a>
+            <a href=""> <i class="bi bi-chat-text"></i></a>
+            <a href=""><i class="bi bi-arrow-90deg-right"></i></a>
+            <a href=""><i class="bi bi-cursor-fill"></i> </a>
+        </div>
+
+    </div>
+    <div class="newsfeed" style="height:99.5%">
+        <div class="poster"><img src="douglas.jpg" alt="">
+            <div class="posterdetail"><span class="dark">Douglas Finnegean</span> 3rd+<br>Go-To-Market & User Experience
+                @ Google<button><img src="icons8-plus-math-16.png" alt=""><span style="color: blue;">
+                        Follow</span></button> <br>1w</div>
+        </div>
+
+        <div class="description dark">Looking for jobs in college, I was always attracted to the companies with the free
+            food, swag, ski trip off-sites, and post-work happy hours. Without knowing it, I defined a 'good' culture by
+            being a fun culture.
+            <br><br>
+        </div>
+        <div class="postimage">
+            <video controls autoplay muted>
+                <source src="samplevideo.mp4" type="video/mp4">
+            </video>
+
+        </div>
+
+        <div class="likerdetails">
+            <div> <span class="interactions imgs"><img src="Like.svg" alt=""><img src="Appreciate.svg" alt=""><img
+                        src="Clap.svg" alt=""></span>
+                <span class="interactions">Goutham N and 377 others</span>
+            </div>
+            <div><span class="interactions">2 comments</span>
+                <span class="interactions">7 shares</span>
+
+            </div>
+        </div>
+        <div class="operation">
+            <a href=""> <i class="bi bi-hand-thumbs-up"></i></a>
+            <a href=""><i class="bi bi-chat-text"></i></a>
+            <a href=""><i class="bi bi-arrow-90deg-right"></i></a>
+            <a href=""><i class="bi bi-cursor-fill"></i></a>
+        </div>
+
+    </div>
+    </div>
+
+
+
+    <!-- right side contents -->
+    <div class="rightpannel">
+        <div class="dark" style="font-size: larger;">LinkedIn News</div>
+        <ul>
+            <li class="news dark">What to do witha bonus or pay hike
+                <h6>1d ago <i class="fa-solid fa-period"></i> 2,450 readers
+                </h6>
+            </li>
+
+            <li class="news dark">Applying for fresher roles? Watch this
+                <h6>2d ago
+                    <i class="fa-solid fa-period"></i> 202 readers
+                </h6>
+            </li>
+
+            <li class="news dark">Meesho lays off 150 employes
+                <h6>2d ago
+                    <i class="fa-solid fa-period"></i>2,7346 readers
+                </h6>
+            </li>
+
+            <li class="news dark">The 25 Top companies in India
+                <h6>8d ago
+                    <i class="fa-solid fa-period"></i>48,657 readers
+                </h6>
+            </li>
+
+            <li class="news dark">Musk hints at Plan 'B' for Twitter
+                <h6>5h ago
+                    <i class="fa-solid fa-period"></i>20,241 readers
+                </h6>
+            </li>
+
+        </ul>
+        <h3 style="font-weight: 200 ;">Show more
+            <select name="" id=""></select>
+        </h3>
+    </div>
+
+</body>
+
+</html>

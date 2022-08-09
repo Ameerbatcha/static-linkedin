@@ -1,0 +1,188 @@
+.leftpannel_1 {
+    float: left;
+    height: 25rem;
+    width: 15.5%;
+    margin-left: 12%;
+    margin-bottom: 1rem;
+    background-color: #e3e3e3;
+    border: 1px solid grey;
+    border-radius: 2%;
+
+
+}
+
+.leftpannel_1>.userinfo1 {
+    border-top-left-radius: 3.5%;
+    border-top-right-radius: 3.5%;
+    position: relative;
+    width: 100%;
+    height: 48%;
+    background-color: white;
+    border-bottom: 1px solid grey;
+    text-align: center;
+    background-image: url("./background.png");
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+.leftpannel_1>.userinfo2 {
+    position: relative;
+    width: 100%;
+    height: 24%;
+    background-color: white;
+    border-bottom: 1px solid grey;
+
+}
+
+.leftpannel_1>.userinfo3 {
+    position: relative;
+    width: 100%;
+    height: 16%;
+    background-color: white;
+    border-bottom: 1px solid grey;
+
+}
+
+.leftpannel_1>.userinfo4 {
+    position: relative;
+    width: 100%;
+    height: 12%;
+    background-color: white;
+    border-bottom-left-radius: 4%;
+    border-bottom-right-radius: 4%;
+
+
+}
+
+.leftpannel_2 {
+   
+    clear: left;
+    height: 8rem;
+    width: 15.5%;
+    margin-left: 12%;
+    background-color: #e3e3e3;
+    border: 1px solid grey;
+    border-radius: 3.5%;
+}
+
+.leftpannel_2>.rescentactivity1 {
+    border-top-left-radius: 3.5%;
+    border-top-right-radius: 3.5%;
+    position: relative;
+    width: 100%;
+    height: 70%;
+    background-color: white;
+    border-bottom: 1px solid grey;
+
+}
+
+.leftpannel_2>.rescentactivity2 {
+    position: relative;
+    width: 100%;
+    height: 30%;
+    background-color: white;
+    border-bottom-left-radius: 4%;
+    border-bottom-right-radius: 4%;
+
+
+}
+
+.leftpannel_1>.userinfo1 .roundimg {
+
+    position: relative;
+    top: 15%;
+    width: 32%;
+    height: 42%;
+    border-radius: 50%;
+    display: inline-flex;
+    margin: 2%;
+
+}
+
+.leftpannel_1>.userinfo1 .roundimg>img {
+    border: 2px solid white;
+    margin-top: 0px;
+    position: relative;
+    display: flex;
+    height: 42%;
+    border-radius: 50%;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.leftpannel_1 h6 {
+    justify-content: center;
+    display: block;
+    font-weight: 100;
+    font-size: 80%;
+    font-family: sans-serif;
+    padding: 5%;
+}
+
+.dark {
+    color: rgb(56, 56, 56);
+}
+
+.leftpannel_2>.rescentactivity1 li {
+    color: blue;
+    padding: 2%;
+}
+
+div a {
+    text-decoration: none;
+}
+
+div h6:hover {
+    background-color: rgb(213, 213, 213);
+}
+
+/* adding hover effect to underline and pre declare none to not to dispaly line before applying effect */
+.leftpannel_1>.userinfo1 a {
+    text-decoration: none;
+}
+
+.leftpannel_1>.userinfo1 a:hover {
+    text-decoration: underline;
+
+}
+
+.leftpannel_2 .rescentactivity1 li:hover {
+    text-decoration: underline;
+
+}
+
+/* establishing animation property for discover more layout */
+
+.leftpannel_2 .rescentactivity2:hover {
+    background-color: rgb(213, 213, 213);
+    animation: over 0.3s ease-in forwards;
+}
+
+/* adding hover effect to the userinfo 2 and 3 */
+
+.userinfo3+.userinfo4:hover {
+    background-color: rgb(213, 213, 213);
+}
+
+.userinfo3:hover {
+    background-color: rgb(213, 213, 213);
+}
+
+/* animating the Discover more layout */
+@keyframes over {
+    0% {
+        background-color: white;
+    }
+
+    50% {
+        background-color: rgb(213, 213, 213);
+    }
+
+    100% {
+        background-color: white;
+    }
+
+}

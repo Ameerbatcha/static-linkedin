@@ -1,0 +1,35 @@
+.rightpannel{
+  
+    position:absolute;
+    float: right;
+    height: 40%;
+    width: 20.5%;
+    top: 10%;
+    margin-top: 0.5rem;
+    margin-left: 68.5%;
+    margin-right: 10%;
+    margin-bottom: 1rem;
+    border: 1px solid grey;
+    border-radius: 2%;
+    padding: 1rem;
+    background-color: white;
+    overflow:hidden ;
+}
+
+.news{
+    font-size: 1rem;
+    margin: 0.7rem;
+    padding-left: 0.5rem;
+    position: relative;
+    
+    list-style-type: circle;
+}
+.inn{
+    position: relative;
+    display: inline;
+    list-style-type: circle;
+}
+.news:hover{
+    background-color: rgb(213, 213, 213);
+}
+
